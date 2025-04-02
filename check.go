@@ -14,6 +14,7 @@ func checkDir(path string, mode fs.FileMode) error {
 		if err := os.MkdirAll(path, mode); err != nil {
 			return err
 		}
+		return nil
 	}
 
 	return err
