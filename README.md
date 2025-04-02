@@ -42,8 +42,6 @@ func main() {
 
         Prefix: "",            // log prefix
         Flag:   log.LstdFlags, // log flag (https://pkg.go.dev/log#pkg-constants)
-
-        lock: sync.RWMutex{}
     }
 
     if err := logger.Init(); err != nil {
