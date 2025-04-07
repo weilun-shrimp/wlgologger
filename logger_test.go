@@ -29,7 +29,6 @@ func TestInit(t *testing.T) {
 		Prefix: "",            // log prefix
 		Flag:   log.LstdFlags, // log flag (https://pkg.go.dev/log#pkg-constants)
 	}
-	// fmt.Printf("%+v\n", logger)
 
 	if err := logger.Init(); err != nil {
 		fmt.Printf("%+v\n", logger)

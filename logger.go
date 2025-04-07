@@ -45,8 +45,6 @@ func (l *Logger) Init() error {
 
 	// check log rotate dir path
 	if err := checkDir(l.RotateDirPath, l.RotateDirMode); err != nil {
-		fmt.Println("check rotate dir path error")
-		fmt.Println(err)
 		return err
 	}
 
@@ -60,7 +58,6 @@ func (l *Logger) Init() error {
 func (l *Logger) init() error {
 	// check log dir path
 	if err := checkDir(l.DirPath, l.DirMode); err != nil {
-		fmt.Println("check dir path error")
 		return err
 	}
 
